@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+a.a:hover {
+  text-decoration: none;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #0843e3;
+}
+.main_header .navbar-brand {
+  color: #fff;
+  animation: head 2s linear infinite;
+  animation-direction: alternate;
+}
+.main_header .navbar-brand .fas {
+  font-size: 3rem;
+}
+@keyframes head {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.main_header .navbar-brand:hover {
+  filter: drop-shadow(0 1.5rem 1 rem rgba(255, 255, 255, 0.5));
+}
+.main_header .navbar-nav {
+  padding-left: 15rem;
+}
+.main_header .navbar-nav .nav-item .nav-link {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 3rem;
+}
+.main_header .navbar-nav .nav-item li:last-child > .nav-link {
+  padding-right: 0%;
+}
+.main_header .nav-item:hover > .nav-link, .main_header .navbar-brand:hover, .main_header .navbar-brand:hover > .fas {
+  color: #2a48e0;
+}
+.main_header .mybtn {
+  padding: 0.8rem 3.2rem;
+  background: #2a48e0;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.main_header .mybtn:hover {
+  background-color: #fff;
+  box-shadow: 0rem 15rem 20rem rgba(255, 255, 157, 0.4);
+  color: #0843e3;
+  transform: translate(-7px);
+}
+.main_header .form-control {
+  width: 150px;
+}
+
+.header_hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.header_hero .header_text {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.header_hero .header_text h2 {
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 7rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+.header_hero .header_text h2 span {
+  color: text-color;
+  text-transform: capitalize;
+}
+.header_hero .header_text .headertextbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header_hero .header_text .headertextbtn a {
+  padding: 0.8rem 3.2rem;
+  background: #2a48e0;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.header_hero .header_text .headertextbtn a:hover {
+  background-color: #fff;
+  box-shadow: 0rem 15rem 20rem rgba(255, 255, 157, 0.4);
+  color: #0843e3;
+  transform: translate(-7px);
+}
+.header_hero .header_img {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  animation: anime-hero 2s infinite ease-in-out;
+}
+@keyframes anime-hero {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.header_hero .header_img img {
+  filter: drop-shadow(0 0 0.5rem rgba(103, 187, 242, 0.977));
+}
+
+.features-section {
+  background-color: #f8f0f3;
+  padding: 30px 0;
+}
+.features-section .col-md-3 i {
+  font-size: 2rem;
+  color: #f0047f;
+}
+.features-section .col-md-3 p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carousel-caption h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.3);
+}
+
+p {
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.carousel {
+  position: relative;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* style.css */
+.video-section {
+  padding: 80px 0;
+  background-color: #121213; /* Light background color */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.bottom {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) #0843e3;
+}
+
+@media (max-width: 768px) {
+  .header_hero {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_hero .header_text {
+    height: 30vh;
+    margin-top: 40px;
+  }
+  .header_hero .header_text h2 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  .header_hero .imgplace {
+    margin-bottom: auto;
+    height: 250px;
+    width: 250px;
+  }
+  .header_hero .header_img {
+    height: fit-content;
+  }
+  .features-section p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=mainmin.css.map */
