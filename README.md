@@ -2,6 +2,10 @@
 
 Echo S25 is a stylish and feature-rich website built using **SaaS and Bootstrap 5** to promote a high-quality audio experience with advanced headphones. The site provides product details, features, a demo section, and contact information.
 
+## Live Demo
+[Echo S25 Live Demo](https://shreyadevadigak.github.io/Echo-S25-Headset/)
+
+
 ## Features
 
 - **Responsive Design:** Fully optimized for mobile and desktop.
